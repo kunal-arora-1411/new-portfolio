@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunal Arora - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Archivo+Narrow:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-text">Loading Experience</span>
+      <div class="preloader-bar-track">
+        <div class="preloader-bar-fill" id="preloader-fill"></div>
+      </div>
+      <span class="preloader-percent" id="preloader-percent">0%</span>
+    </div>
+  </div>
+
+  <!-- F1 Scrollytelling -->
+  <section id="f1-hero">
+    <canvas id="ambient-canvas"></canvas>
+    <canvas id="f1-canvas"></canvas>
+
+    <!-- Panel 1: Hero Name -->
+    <div class="scroll-panel" id="panel-hero">
+      <div class="panel-inner panel-center">
+        <h1 class="hero-name">KUNAL ARORA</h1>
+        <div class="hero-line"></div>
+        <p class="hero-role">DEVELOPER / AI RESEARCHER</p>
+      </div>
+    </div>
+
+    <!-- Panel 2: About -->
+    <div class="scroll-panel" id="panel-about">
+      <div class="panel-inner panel-left">
+        <span class="panel-label">// About</span>
+        <h2 class="panel-title">WHO I AM</h2>
+        <div class="panel-box">
+          <p>AI & ML Engineer building intelligent systems that solve real-world problems.
+            B.Tech in Computer Science (AI & ML) at UPES Dehradun.</p>
+          <p>From lifelike AI companions to LLM-powered interview platforms and edge-deployed
+            vision systems, I operate at the intersection of research and production.</p>
+        </div>
+        <div class="stat-row">
+          <div class="stat-item">
+            <span class="stat-number">~1</span>
+            <span class="stat-text">Years Exp</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-text">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">6</span>
+            <span class="stat-text">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 1: Rabbitt AI -->
+    <div class="scroll-panel" id="panel-exp1">
+      <div class="panel-inner panel-right">
+        <span class="panel-label">// Experience</span>
+        <h2 class="panel-title">WHERE I'VE WORKED</h2>
+        <div class="exp-card">
+          <div class="exp-header">
+            <span class="exp-company">Rabbitt AI<span class="exp-location">Delhi</span></span>
+            <span class="exp-period">Jan 2026 - Present</span>
+          </div>
+          <span class="exp-role">AI Researcher</span>
+          <ul class="exp-highlights">
+            <li>Led end-to-end development of an AI-driven marketing intelligence platform analyzing company AI visibility through GEO/AIEO signals</li>
+            <li>Designed product architecture from scratch, defining research direction, system design, and scalable backend infrastructure</li>
+            <li>Developed AI pipelines to evaluate brand presence across LLM-driven discovery platforms and generative search interfaces</li>
+            <li>Optimized backend systems and model-serving workflows, reducing server load and improving inference efficiency</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 2: Foton Labs -->
+    <div class="scroll-panel" id="panel-exp2">
+      <div class="panel-inner panel-right">
+        <span class="panel-label">// Experience</span>
+        <h2 class="panel-title">WHERE I'VE WORKED</h2>
+        <div class="exp-card">
+          <div class="exp-header">
+            <span class="exp-company">Foton Labs<span class="exp-location">Los Angeles (Remote)</span></span>
+            <span class="exp-period">Oct - Nov 2025</span>
+          </div>
+          <span class="exp-role">AI & ML Engineer (Contract)</span>
+          <ul class="exp-highlights">
+            <li>Worked on Project GRACE, a lifelike interactive AI companion with real-time 3D visuals</li>
+            <li>Optimized prompt architecture to enhance response relevance and contextual coherence</li>
+            <li>Automated backend server workflows with deployment scripts and health checks</li>
+            <li>Reduced cold-start time by optimizing model initialization across edge nodes</li>
+            <li>Minimized latency using edge functions and distributed execution for near real-time performance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 3: Binary Keeda -->
+    <div class="scroll-panel" id="panel-exp3">
+      <div class="panel-inner panel-right">
+        <span class="panel-label">// Experience</span>
+        <h2 class="panel-title">WHERE I'VE WORKED</h2>
+        <div class="exp-card">
+          <div class="exp-header">
+            <span class="exp-company">Binary Keeda<span class="exp-location">Dehradun</span></span>
+            <span class="exp-period">Aug - Dec 2025</span>
+          </div>
+          <span class="exp-role">AI & ML Intern</span>
+          <ul class="exp-highlights">
+            <li>Built LLM-powered interview system with auto-generated personalized questions</li>
+            <li>Developed rubric-based grading engine with JSON scores and feedback</li>
+            <li>Integrated integrity checks: eye-tracking (OpenCV) and AI-plagiarism detection</li>
+            <li>Optimized prompt design and model selection (GPT-4, Claude, Llama-3) for quality and cost</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 4: SNet Labs -->
+    <div class="scroll-panel" id="panel-exp4">
+      <div class="panel-inner panel-right">
+        <span class="panel-label">// Experience</span>
+        <h2 class="panel-title">WHERE I'VE WORKED</h2>
+        <div class="exp-card">
+          <div class="exp-header">
+            <span class="exp-company">SNet Labs<span class="exp-location">Noida</span></span>
+            <span class="exp-period">Jun - Jul 2025</span>
+          </div>
+          <span class="exp-role">AI & ML Intern</span>
+          <ul class="exp-highlights">
+            <li>Researched and benchmarked foundation models (RTMDetr, DINOv2, SoundStorm)</li>
+            <li>Delivered 7 vision plug-ins: Drowsiness, Sign-Language, Pothole, ANPR, Queue, Flame/Smoke, Smart-Fence</li>
+            <li>Optimized training and inference via quantization and ONNX/OpenVINO</li>
+            <li>Streamlined dataset QA with CVAT for higher model reliability</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 1: Interview System -->
+    <div class="scroll-panel" id="panel-proj1">
+      <div class="panel-inner panel-left">
+        <span class="panel-label">// Projects</span>
+        <h2 class="panel-title">THINGS I'VE BUILT</h2>
+        <div class="proj-card">
+          <h3 class="proj-title">LLM-based Interactive Interview System</h3>
+          <span class="proj-period">Aug 2025 - Sep 2025</span>
+          <p class="proj-desc">Automated pipeline to parse job descriptions and resumes, generate
+            competency-based interview questions with adaptive follow-ups. Strict JSON grading with
+            score, band, justification, and follow-up question storage. Integrity checks with
+            eye-tracking (OpenCV) and AI-plagiarism detection.</p>
+          <p class="proj-impact">Reduced interview preparation time by 70% and improved candidate evaluation consistency</p>
+          <div class="proj-tags">
+            <span>Python</span><span>LangChain</span><span>OpenAI API</span><span>OpenCV</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Brain Tumor -->
+    <div class="scroll-panel" id="panel-proj2">
+      <div class="panel-inner panel-left">
+        <span class="panel-label">// Projects</span>
+        <h2 class="panel-title">THINGS I'VE BUILT</h2>
+        <div class="proj-card">
+          <h3 class="proj-title">DINOv3 MRI Brain Tumor Diagnosis</h3>
+          <span class="proj-period">Jul 2025 - Aug 2025</span>
+          <p class="proj-desc">Domain-adaptive Vision Transformer for brain tumor classification
+            and segmentation. Achieved 98% test accuracy for 4-class tumor diagnosis. Dice Score
+            of 0.87 and IoU of 0.78 for tumor segmentation masks. Built end-to-end pipeline from
+            data prep to evaluation.</p>
+          <p class="proj-impact">Research paper under review at IEEE. Cross-dataset validation on BRISC-2025 and BraTS</p>
+          <div class="proj-tags">
+            <span>PyTorch</span><span>HuggingFace</span><span>OpenCV</span><span>DINOv3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: RAG Chatbot -->
+    <div class="scroll-panel" id="panel-proj3">
+      <div class="panel-inner panel-left">
+        <span class="panel-label">// Projects</span>
+        <h2 class="panel-title">THINGS I'VE BUILT</h2>
+        <div class="proj-card">
+          <h3 class="proj-title">Multimodal Cloud-Native RAG Chatbot</h3>
+          <span class="proj-period">Jun 2025 - Jul 2025</span>
+          <p class="proj-desc">Retrieval-augmented assistant with multi-modal support for text,
+            images (BLIP), and voice (Whisper STT + TTS). Built with GROQ Llama-3.3-70B for fast
+            inference. Cloud-native architecture for scalability.</p>
+          <p class="proj-impact">Deployed for internal team use with 95% user satisfaction. Sub-1s response time across all modalities</p>
+          <div class="proj-tags">
+            <span>LangChain</span><span>GROQ Llama-3.3</span><span>Streamlit</span><span>BLIP</span><span>Whisper</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 5: Skills -->
+    <div class="scroll-panel" id="panel-skills">
+      <div class="panel-inner panel-center-wide">
+        <span class="panel-label">// Skills</span>
+        <h2 class="panel-title">MY TOOLKIT</h2>
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h3>Languages</h3>
+            <div class="skill-pills">
+              <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>Bash</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>ML / AI</h3>
+            <div class="skill-pills">
+              <span>PyTorch</span><span>TensorFlow</span><span>LangChain</span><span>RAG</span><span>GPT-4</span><span>Claude</span><span>Llama-3</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>Vision</h3>
+            <div class="skill-pills">
+              <span>OpenCV</span><span>DINOv2</span><span>RTMDetr</span><span>Segmentation</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>Backend</h3>
+            <div class="skill-pills">
+              <span>Node.js</span><span>Next.js</span><span>FastAPI</span><span>REST</span><span>WebRTC</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>MLOps</h3>
+            <div class="skill-pills">
+              <span>ONNX</span><span>OpenVINO</span><span>Docker</span><span>Edge Deploy</span><span>CI/CD</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>Tools</h3>
+            <div class="skill-pills">
+              <span>Git</span><span>GitHub Actions</span><span>Figma</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 6: Education -->
+    <div class="scroll-panel" id="panel-education">
+      <div class="panel-inner panel-right">
+        <span class="panel-label">// Education & Research</span>
+        <h2 class="panel-title">ACADEMIC</h2>
+        <div class="edu-card">
+          <h3>B.Tech Computer Science (AI & ML)</h3>
+          <p class="edu-institution">UPES Dehradun | CGPA 8.0 | 2022 - Present</p>
+        </div>
+        <div class="edu-card">
+          <h3>DINOv3 Brain Tumor Analysis</h3>
+          <p class="edu-institution">IEEE Paper Under Review</p>
+          <p class="edu-desc">Domain-adaptive Vision Transformer with LoRA for classification
+            and segmentation. Cross-dataset validation on BRISC-2025 and BraTS.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 7: Certifications -->
+    <div class="scroll-panel" id="panel-certs">
+      <div class="panel-inner panel-right">
+        <span class="panel-label">// Certifications</span>
+        <h2 class="panel-title">CREDENTIALS</h2>
+        <div class="cert-list">
+          <a class="cert-item" href="https://www.skills.google/public_profiles/351530b0-1c62-4743-91d7-ad31ff90ddf1" target="_blank" rel="noopener noreferrer">
+            <span class="cert-name">Google Cloud Skills Boost</span>
+            <span class="cert-detail">29 Badges, Diamond, 19,835 pts</span>
+          </a>
+          <a class="cert-item" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=A7B502B34DDCA77668470C53826B3B190F2E20F73147805AE41B1B6FA81BEE2E" target="_blank" rel="noopener noreferrer">
+            <span class="cert-name">Oracle Cloud GenAI</span>
+            <span class="cert-detail">Professional</span>
+          </a>
+          <a class="cert-item" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=0230AD7BC3651286C57CE9CDC616F803BF14D2E6859EFDFCABF4742D8347EC42" target="_blank" rel="noopener noreferrer">
+            <span class="cert-name">Oracle Cloud AI Foundations</span>
+            <span class="cert-detail">Associate</span>
+          </a>
+          <a class="cert-item" href="https://skillwallet.smartinternz.com/certificate/virtual-internship/2e09811007f834b96935dc13e91fabbc" target="_blank" rel="noopener noreferrer">
+            <span class="cert-name">NASSCOM AI/ML & Generative AI</span>
+            <span class="cert-detail">Project-Based</span>
+          </a>
+          <a class="cert-item" href="https://www.kaggle.com/learn/certification/kunalar1411/intro-to-deep-learning" target="_blank" rel="noopener noreferrer">
+            <span class="cert-name">Kaggle - Intro to Deep Learning</span>
+            <span class="cert-detail">Certificate</span>
+          </a>
+          <a class="cert-item" href="https://www.kaggle.com/learn/certification/kunalar1411/computer-vision" target="_blank" rel="noopener noreferrer">
+            <span class="cert-name">Kaggle - Computer Vision</span>
+            <span class="cert-detail">Certificate</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 7: Contact -->
+    <div class="scroll-panel" id="panel-contact">
+      <div class="panel-inner panel-center">
+        <h2 class="contact-headline">LET'S BUILD<br>SOMETHING</h2>
+        <div class="hero-line"></div>
+        <a href="mailto:kunalar2003@gmail.com" class="contact-email">kunalar2003@gmail.com</a>
+        <div class="contact-links">
+          <a href="https://github.com/kunal-arora-1411" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/kunal-arora-597a4827b/" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="tel:+918368273225" class="contact-phone">
+            <svg class="phone-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span class="phone-number">8368273225</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
