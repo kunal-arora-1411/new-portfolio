@@ -4,7 +4,7 @@
 
 class F1Experience {
   constructor() {
-    this.frameCount = 393;
+    this.frameCount = 197;
     this.frames = [];
     this.loadedCount = 0;
     this.currentFrame = 0;

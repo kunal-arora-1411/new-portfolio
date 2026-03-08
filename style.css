@@ -120,6 +120,17 @@ canvas {
   letter-spacing: -1px;
 }
 
+.preloader-note {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.35);
+  display: block;
+  margin-top: 1.5rem;
+}
+
 /* ============================================
    F1 HERO SECTION
    ============================================ */
@@ -167,6 +178,7 @@ canvas {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+  padding: 5vh 0;
 }
 
 #panel-hero {
@@ -179,13 +191,17 @@ canvas {
 }
 
 .panel-inner {
-  max-height: 90vh;
+  max-height: 88vh;
   overflow-y: auto;
   scrollbar-width: none;
 }
 
 .panel-inner::-webkit-scrollbar {
   display: none;
+}
+
+.panel-inner {
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Layout Variations */
@@ -717,12 +733,50 @@ a.cert-item:hover {
 /* ============================================
    RESPONSIVE
    ============================================ */
+
+/* --- Tablet (768px and below) --- */
 @media (max-width: 768px) {
   .panel-left,
   .panel-right {
     width: 92vw;
     margin-left: 4vw;
     margin-right: 4vw;
+  }
+
+  .panel-center-wide {
+    width: 96vw;
+  }
+
+  .panel-inner {
+    max-height: 85vh;
+  }
+
+  .panel-title {
+    font-size: clamp(2.25rem, 7vw, 3.5rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .panel-box {
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .panel-box p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-item {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .stat-text {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
   }
 
   .skills-grid {
@@ -745,14 +799,196 @@ a.cert-item:hover {
     border-bottom: none;
   }
 
+  .skill-block {
+    padding: 1.25rem;
+  }
+
   .exp-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
   }
+
+  .exp-card {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .exp-highlights li {
+    font-size: 1.05rem;
+  }
+
+  .proj-card {
+    padding: 1.5rem;
+  }
+
+  .proj-title {
+    font-size: 1.5rem;
+  }
+
+  .proj-desc {
+    font-size: 1.1rem;
+  }
+
+  .proj-impact {
+    font-size: 1rem;
+  }
+
+  .edu-card {
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .edu-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .cert-item {
+    padding: 0.875rem 1rem;
+  }
+
+  .cert-name {
+    font-size: 1.1rem;
+  }
+
+  .cert-detail {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .contact-email {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-links a {
+    width: 56px;
+    height: 56px;
+  }
 }
 
+/* --- Mobile (480px and below) --- */
 @media (max-width: 480px) {
+  .panel-inner {
+    max-height: 82vh;
+  }
+
+  .panel-label {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  .panel-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-name {
+    font-size: clamp(3rem, 14vw, 5rem);
+    letter-spacing: -2px;
+  }
+
+  .hero-role {
+    font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+    letter-spacing: 4px;
+  }
+
+  .hero-line {
+    width: 60px;
+    margin: 1.25rem 0;
+  }
+
+  /* About panel */
+  .panel-box {
+    padding: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .panel-box p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .stat-row {
+    flex-direction: column;
+  }
+
+  .stat-item {
+    padding: 1rem 0.75rem;
+    border-right: none;
+    border-bottom: var(--border);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-text {
+    font-size: 0.8rem;
+  }
+
+  /* Experience */
+  .exp-card {
+    padding: 1rem 1.125rem;
+  }
+
+  .exp-company {
+    font-size: 1.35rem;
+  }
+
+  .exp-role {
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.65rem;
+  }
+
+  .exp-highlights li {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    margin-bottom: 0.35rem;
+  }
+
+  /* Projects */
+  .proj-card {
+    padding: 1.125rem;
+  }
+
+  .proj-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .proj-period {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .proj-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.65rem;
+  }
+
+  .proj-impact {
+    font-size: 0.9rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .proj-tags {
+    gap: 0.4rem;
+  }
+
+  .proj-tags span {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  /* Skills */
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -760,9 +996,128 @@ a.cert-item:hover {
   .skill-block {
     border-right: none !important;
     border-bottom: var(--border) !important;
+    padding: 1rem;
   }
 
   .skill-block:last-child {
     border-bottom: none !important;
+  }
+
+  .skill-block h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-pills span {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.625rem;
+  }
+
+  /* Education */
+  .edu-card {
+    padding: 1rem 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .edu-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .edu-institution {
+    font-size: 0.9rem;
+  }
+
+  .edu-desc {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Certifications */
+  .cert-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.375rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .cert-name {
+    font-size: 1rem;
+  }
+
+  .cert-detail {
+    font-size: 0.75rem;
+  }
+
+  /* Contact */
+  .contact-headline {
+    font-size: clamp(2.75rem, 13vw, 4.375rem);
+    letter-spacing: -2px;
+  }
+
+  .contact-email {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-links {
+    gap: 1rem;
+  }
+
+  .contact-links a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact-links a svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* --- Small mobile (360px and below) --- */
+@media (max-width: 360px) {
+  .panel-inner {
+    max-height: 80vh;
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 13vw, 3.5rem);
+  }
+
+  .panel-title {
+    font-size: 1.5rem;
+  }
+
+  .panel-box p {
+    font-size: 0.9rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .exp-company {
+    font-size: 1.2rem;
+  }
+
+  .exp-highlights li {
+    font-size: 0.875rem;
+  }
+
+  .proj-title {
+    font-size: 1.15rem;
+  }
+
+  .proj-desc {
+    font-size: 0.875rem;
+  }
+
+  .cert-name {
+    font-size: 0.9rem;
+  }
+
+  .contact-headline {
+    font-size: clamp(2.25rem, 12vw, 3rem);
   }
 }
